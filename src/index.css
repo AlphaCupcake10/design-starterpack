@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  @apply bg-background text-text;
+}
+
+@layer base {
+  :root{
+    --text: 9, 17, 21;
+    --background: 218, 220, 236;
+    --background2: 222, 224, 240;
+    --primary: 44, 110, 216;
+    --secondary: 0, 0, 0;
+    --accent: 28, 138, 202;
+  }
+  .dark {
+    --text: 234, 242, 246;
+    --background: 19, 21, 37;
+    --background2: 15, 17, 33;
+    --primary: 39, 105, 211;
+    --secondary: 255, 255, 255;
+    --accent: 53, 164, 227;
+  }
+}
+
+/* Enables the ability to override these classes, eg bg-accent or p-8 works now ! */
+@layer components {
+  /* Common to Buttons, Inputs, Text Buttons */
+  .p-element {
+    @apply px-4 py-3 md:py-4 md:px-6;
+  }
+  .text-element
+  {
+    @apply text-sm md:text-base;
+  }
+  .hover-element
+  {
+    @apply hover:-translate-y-0.5 transition-transform active:scale-95;
+  }
+  .round
+  {
+    @apply rounded-lg md:rounded-xl;
+  }
+
+  .btn
+  {
+    @apply bg-primary text-background dark:text-text;
+  }
+  .pseudo-underline
+  {
+    @apply relative after:absolute after:bg-primary active:after:bg-primary after:h-px after:w-full after:left-0 after:bottom-0 hover:after:origin-left after:origin-right after:transition-transform;
+  }
+  .text-btn
+  {
+    @apply pseudo-underline after:scale-x-0 hover:after:scale-x-100 hover:text-primary transition-all;
+  }
+  .input
+  {
+    @apply bg-background focus:bg-background2 border-text/10 outline-none border-2 transition-all duration-500;
+  }
+  .card
+  {
+    @apply round border-text/10 border p-8 shadow-xl dark:shadow-none;
+  }
+}
