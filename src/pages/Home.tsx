@@ -4,6 +4,7 @@ import Input from "../components/common/Input"
 import TextButton from "../components/common/TextButton"
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { Link } from "react-router-dom";
 
 function Home()
 {
@@ -36,11 +37,17 @@ function Home()
         <Button className="bg-accent">HEHE</Button>
         <TextButton>HEHE</TextButton>
       </div>
-      <div className="h-screen flex justify-center mt-2">
+      <div className="flex justify-center mt-2">
         <div className="h-64 max-w-lg w-full card" ref={tempRef}>
 
         </div>
       </div>
+      <div className="max-w-lg mx-auto card flex flex-col gap-4 mt-2">
+        <Link to={"/3d"}>
+          <Button className="">ENTER EXPERIENCE</Button>
+        </Link>
+      </div>
+      <div className="h-screen"></div>
     </>
   )
 }
