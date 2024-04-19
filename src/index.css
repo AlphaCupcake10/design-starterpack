@@ -25,6 +25,15 @@ body {
     --secondary: 255, 255, 255;
     --accent: 53, 164, 227;
   }
+  ::-webkit-scrollbar
+  {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-thumb
+  {
+    @apply bg-primary rounded-full;
+  }
 }
 
 /* Enables the ability to override these classes, eg bg-accent or p-8 works now ! */
@@ -64,6 +73,6 @@ body {
   }
   .card
   {
-    @apply round border-text/10 border p-8 shadow-xl dark:shadow-none;
+    @apply round dark:outline-text/15 dark:outline dark:outline-1 p-8 shadow-xl dark:shadow-none bg-background;
   }
 }
