@@ -14,7 +14,7 @@ body {
     --background: 218, 220, 236;
     --background2: 222, 224, 240;
     --primary: 44, 110, 216;
-    --secondary: 0, 0, 0;
+    --secondary: 16, 26, 45;
     --accent: 28, 138, 202;
   }
   .dark {
@@ -22,7 +22,7 @@ body {
     --background: 19, 21, 37;
     --background2: 15, 17, 33;
     --primary: 39, 105, 211;
-    --secondary: 255, 255, 255;
+    --secondary: 210, 220, 239;
     --accent: 53, 164, 227;
   }
   ::-webkit-scrollbar
@@ -40,7 +40,7 @@ body {
 @layer components {
   /* Common to Buttons, Inputs, Text Buttons */
   .p-element {
-    @apply px-4 py-3 md:py-4 md:px-6;
+    @apply px-4 py-3;
   }
   .text-element
   {

@@ -54,6 +54,7 @@ function Home()
         <Input placeHolder="HEHEHHE">HEHE</Input>
         <Button className="mt-8">HEHE</Button>
         <Button className="bg-accent">HEHE</Button>
+        <Button className="bg-secondary">HEHE</Button>
         <TextButton>HEHE</TextButton>
       </div>
       <div className="flex justify-center mt-2">

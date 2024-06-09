@@ -17,7 +17,7 @@ export default {
   darkMode:'selector',
   theme: {
     extend: {
-      // https://www.realtimecolors.com/?colors=eaf2f6-131525-2769d3-ffffff-35a4e3&fonts=Poppins-Poppins
+      // https://www.realtimecolors.com/?colors=091115-dadcec-2c6ed8-101a2d-1c8aca&fonts=Poppins-Poppins
       colors: {
         'text': withOpacityValue('--text'),
         'background': withOpacityValue('--background'),
